@@ -55,14 +55,14 @@ int main() {
         if(i <= (max_X-150)/2) {
             setcolor(YELLOW);
             setfillstyle(SOLID_FILL, YELLOW);    
-            circle(75 + i, midy - 150, 9+i/);
-            floodfill(75 + i, midy - 150, YELLOW);
+            circle(max_X-75 - i, midy - 150, 9+i/10);
+            floodfill(max_X-75 - i, midy - 150, YELLOW);
         }
         else {
             setcolor(YELLOW);
             setfillstyle(SOLID_FILL, YELLOW);                
-            circle(75 + i, midy - 150, 9+(max_X-150)/10 - (i-(max_X-150)/2)/10);
-            floodfill(75 + i, midy - 150, YELLOW);            
+            circle(max_X-75 - i, midy - 150, 9+(max_X-150)/20 - (i-(max_X-150)/2)/10);
+            floodfill(max_X-75 - i, midy - 150, YELLOW);            
         }
 
         delay(100);
